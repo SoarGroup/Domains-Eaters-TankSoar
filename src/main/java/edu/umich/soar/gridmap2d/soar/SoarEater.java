@@ -63,7 +63,10 @@ public final class SoarEater implements EaterCommander {
 		for (int i = 0; i < agent.GetNumberCommands(); ++i) {
 			Identifier commandId = agent.GetCommand(i);
 			String commandName = commandId.GetAttribute();
-			
+			if (commandId.GetParameterValue("status") != null) {
+				//System.out.println("Status already processed.");
+				continue;
+			}
 			if (commandName.equalsIgnoreCase(Names.kMoveID)) {
 				if (move.move || moveWait) {
 					logger.debug(player.getName() + ": multiple move/jump commands detected (move)");
