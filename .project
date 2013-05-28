@@ -3,7 +3,6 @@
 	<name>soar-soar2d</name>
 	<comment></comment>
 	<projects>
-		<project>soar-smljava</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -11,8 +10,36 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>LaunchConfigHandle</key>
+					<value>&lt;project&gt;/.externalToolBuilders/Ant_Builder.launch</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>output</name>
+			<type>2</type>
+			<location>/Users/mazzin/Soar/repository/Domains/Eaters_TankSoar/output</location>
+		</link>
+	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1369707073869</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-target</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>

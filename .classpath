@@ -5,12 +5,19 @@
 	<classpathentry excluding="**/.svn/" kind="src" path="src/test/resources"/>
 	<classpathentry excluding="**/.svn/" kind="src" path="src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/soar-smljava/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/soar-smljava/lib/log4j-1.2.15.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/soar-smljava"/>
-	<classpathentry kind="lib" path="/soar-smljava/lib/stopwatch-0.4-with-deps.jar"/>
-	<classpathentry kind="var" path="SOARBIN/java/sml.jar"/>
-	<classpathentry kind="var" path="SOARBIN/java/swt.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/jcommon-1.0.10.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/jfreechart-1.0.6-swt.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/jfreechart-1.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/sml.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/SoarSandbox/java/soar-debugger-api.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/SoarSandbox/java/soar-debugger.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/SoarSandbox/java/soar-smljava.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/repository/Compiled/lib/stopwatch-0.4-with-deps.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/SoarSandbox/java/swt.jar"/>
+	<classpathentry kind="lib" path="/Users/mazzin/Soar/SoarSandbox/java/swtgraphics2d.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mazzin/Soar/SoarSandbox/java"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
