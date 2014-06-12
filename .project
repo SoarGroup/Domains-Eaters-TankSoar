@@ -28,12 +28,12 @@
 		<link>
 			<name>output</name>
 			<type>2</type>
-			<location>/Users/mazzin/Soar/repository/Domains/Eaters_TankSoar/output</location>
+			<location>/Users/mazzin/git/Soar/Release/Shuffler_Input/jars</location>
 		</link>
 	</linkedResources>
 	<filteredResources>
 		<filter>
-			<id>1369707073869</id>
+			<id>1402561198266</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
