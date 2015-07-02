@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>soar-soar2d</name>
+	<name>Eaters_TankSoar</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -33,7 +33,7 @@
 	</linkedResources>
 	<filteredResources>
 		<filter>
-			<id>1402561198266</id>
+			<id>0</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
