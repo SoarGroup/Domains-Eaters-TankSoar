@@ -85,7 +85,7 @@
 			version="true"
 			use="true"
 			windowtitle="${doc.windowtitle}">
-			<doctitle><![CDATA[<h1><a href="http://sitemaker.umich.edu/soar">Soar</a> ${version}</h1>]]></doctitle>
+			<doctitle><![CDATA[<h1><a href="http://soar.eecs.umich.edu/soar">Soar</a> ${version}</h1>]]></doctitle>
 			<bottom><![CDATA[<i>${copyright}</i>]]></bottom>
 		</javadoc>
 	</target>
