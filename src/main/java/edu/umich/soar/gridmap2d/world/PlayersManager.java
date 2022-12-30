@@ -22,7 +22,7 @@ public class PlayersManager<P extends Player> {
 	private Map<P, int []> initialLocations = new HashMap<P, int []>(7);
 	private Map<P, int []> locations = new HashMap<P, int []>(7);
 	private Map<P, CommandInfo> lastCommands = new HashMap<P, CommandInfo>(7);
-	
+
 	public int numberOfPlayers() {
 		return players.size();
 	}
@@ -30,31 +30,31 @@ public class PlayersManager<P extends Player> {
 	List<P> getAll() {
 		return players;
 	}
-	
+
 	Player[] getAllAsPlayers() {
 		return players.toArray(new Player[0]);
 	}
-	
+
 	ListIterator<P> listIterator() {
 		return players.listIterator();
 	}
-	
+
 	ListIterator<P> listIterator(int index) {
 		return players.listIterator(index);
 	}
-	
+
 	public int [] getLocation(P player) {
 		return locations.get(player);
 	}
-	
+
 	void setLocation(P player, int [] location) {
 		locations.put(player, location);
 	}
-	
+
 	public CommandInfo getCommand(P player) {
 		return lastCommands.get(player);
 	}
-	
+
 	void setCommand(P player, CommandInfo move) {
 		lastCommands.put(player, move);
 
@@ -63,19 +63,19 @@ public class PlayersManager<P extends Player> {
 			logger.info(player.getName() + ": " + moveString);
 		}
 	}
-	
+
 	P get(String name) {
 		return playersMap.get(name);
 	}
-	
+
 	P get(int index) {
 		return players.get(index);
 	}
-	
+
 	int indexOf(P player) {
 		return players.indexOf(player);
 	}
-	
+
 	void remove(P player) {
 		logger.info("Removing player " + player);
 		players.remove(player);
@@ -84,11 +84,11 @@ public class PlayersManager<P extends Player> {
 		locations.remove(player);
 		lastCommands.remove(player);
 	}
-	
+
 	/**
 	 * @param player The player to add, the player's name must be unique.
 	 * @param initialLocation The player's starting location.
-	 * 
+	 *
 	 * @throws IllegalStateException If the player name is already in use.
 	 */
 	void add(P player, int [] initialLocation) {
@@ -99,12 +99,12 @@ public class PlayersManager<P extends Player> {
 		logger.info("Adding player " + player);
 		players.add(player);
 		playersMap.put(player.getName(), player);
-		
+
 		if (initialLocation != null) {
 			initialLocations.put(player, Arrays.copyOf(initialLocation, initialLocation.length));
 		}
 	}
-	
+
 	boolean hasInitialLocation(P player) {
 		return initialLocations.containsKey(player);
 	}
@@ -112,25 +112,25 @@ public class PlayersManager<P extends Player> {
 	int [] getInitialLocation(P player) {
 		return initialLocations.get(player);
 	}
-	
+
 	boolean exists(String name) {
 		return playersMap.containsKey(name);
 	}
-	
+
 	int size() {
 		return players.size();
 	}
-	
+
 	int[] getSortedScores() {
 		int[] scores = new int[players.size()];
-		
+
 		for (int i = 0; i < players.size(); ++i) {
 			scores[i] = players.get(i).getPoints();
 		}
 		Arrays.sort(scores);
 		return scores;
 	}
-	
+
 	void interrupted(String interruptedName) {
 		P interruptedPlayer = get(interruptedName);
 		if (numberOfPlayers() <= 1) {
@@ -142,13 +142,13 @@ public class PlayersManager<P extends Player> {
 		for (P player : players) {
 			if (!player.getName().equals(interruptedName)) {
 				if (lowestScore == null) {
-					lowestScore = new Integer(player.getPoints());
+					lowestScore = Integer.valueOf(player.getPoints());
 				} else {
 					lowestScore = Math.min(lowestScore, player.getPoints());
 				}
 			}
 		}
-		
+
 		lowestScore -= 1;
 		interruptedPlayer.setPoints(lowestScore, "interrupted");
 	}
