@@ -2,7 +2,7 @@
 
 	<property name="manifest.classpath" value="java/stopwatch-0.4-with-deps.jar java/commons-logging-1.1.1.jar java/log4j-1.2.15.jar java/soar-smljava.jar java/soar-debugger.jar java/swt.jar java/sml.jar" />
 	<property name="jar.main.class" value="edu.umich.soar.gridmap2d.Gridmap2D" />
-      
+
 	<condition property="is_windows">
 		<os family="windows" />
 	</condition>
@@ -15,9 +15,9 @@
 	<property name="target.classes" location="${target}/classes" />
 	<property name="main.resources" location="src/main/resources" />
 
-	<property name="java.source.level" value="1.5"/>
+	<property name="java.source.level" value="1.7"/>
 	<property name="java.target.level" value="1.7"/>
-	
+
 	<property name="jar.name" value="Eaters_TankSoar.jar"/>
 
 	<property name="manifest.classpath" value=""/>
@@ -66,7 +66,7 @@
 				<attribute name="Class-Path" value=". ${manifest.classpath}" />
 			</manifest>
 		</jar>
-			
+
 	</target>
 
 	<target name="clean">
